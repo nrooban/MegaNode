@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGA Test</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/aes.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/pbkdf2.min.js"></script>
+    <link href="/style.css" rel="stylesheet" >
+</head>
+<body>
+
+
+    <div class="uploader">
+        <button class="btn-close"><img src="/cancel.png"> </button>
+        <div class="uploader__form-section">
+            
+            <h1 class="uploader__form-title">File Upload</h1>
+            <hr>
+            <form id="ajax-upload-form" enctype="multipart/form-data">
+
+                <label class="uploader__form-label" for="fpassword">Enter Password to Encript Files</label><br>
+                <input class="uploader__form-input form-password" type="password" id="txtPassword" name="fpassword" value="">
+                <hr>
+                <label class="uploader__form-label" for="fSelectedFile">Upload File</label><br>
+                <input class="uploader__form-input" type="text" id="txtSelectedFile" name="fSelectedFile" >
+                
+                <label for="txtFileUpload" class="btn btn__default w40"><span class="btn__label-text ">Browse</span></label>
+                <input id="txtFileUpload" class="file-input" type="file"/>
+                <button type="submit" class="btn btn__success w60"><i class="fa fa-upload"></i> UPLOAD</button>
+                <div id="divMessage" class="uploader__message">
+                    
+                </div>
+            </form>
+        </div>
+        <div class="uploader__process-section">
+            <h3 class="uploader__process-title">Progress</h3>
+            <hr class="hr-dark">
+            <div class="uploader__process-header">
+                <span>DATE</span>
+                <span>NAME</span>
+                <span>PROGRESS</span>
+            </div>
+            <div class="progress-container">
+
+            </div>
+
+            
+
+        </div>
+    </div>
+    <!-- <div class="main-container">
+        <div class="section">
+            <form id="ajax-upload-form" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-10">
+                        <input type="text" id="txtSelectedFile" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        
+                        <label for="file-upload" class="custom-file-upload">
+                            <i class="fa fa-cloud-upload"></i> Browse
+                        </label>
+                        <input id="file-upload" class="file-input" name="ajax_file" type="file" multiple/>
+                    </div>
+                    <div class="col-2 text-right">
+                        <button type="submit" class="btn btn-blue"><i class="fa fa-upload"></i> Upload</button>
+                    </div>
+                </div>
+            </form>
+            <div class="progress-container"></div>
+        </div>
+    </div> -->
+    <script src="/uploader.js"></script>
+</body>
+</html>
+
+
+<!-- https://www.codestacked.info/2018/11/ajax-file-upload-with-dynamic-progress-bar.html -->
