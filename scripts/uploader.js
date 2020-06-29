@@ -1,7 +1,7 @@
-var salt = CryptoJS.lib.WordArray.random(128/8);
-var iv = CryptoJS.lib.WordArray.random(128/8);
-var iterations = 500;
-var keySize = 256;
+const salt = CryptoJS.lib.WordArray.random(128/8);
+const iv = CryptoJS.lib.WordArray.random(128/8);
+const iterations = 500;
+const keySize = 256;
 
 $(document).ready(function () {
     $('#divMessage').hide();
@@ -10,21 +10,21 @@ $(document).ready(function () {
     $("#ajax-upload-form").submit(function (e) {
         e.preventDefault();
         $('#divMessage').hide();
-        var files = $("#txtFileUpload")[0].files;
-        var password = $("#txtPassword").val();
+        const files = $("#txtFileUpload")[0].files;
+        const password = $("#txtPassword").val();
 
         if(files.length > 0 && password != null && password != '' ) {
             let file = files[0];
-            var size = file.size;
-            const lastModifiedDate = new Date(file.lastModified);
-            var uploadedDate = lastModifiedDate.getUTCDate() + '/' + lastModifiedDate.getUTCMonth() + '/' + lastModifiedDate.getUTCFullYear();
+            let size = file.size;
+            let lastModifiedDate = new Date(file.lastModified);
+            let uploadedDate = lastModifiedDate.getUTCDate() + '/' + lastModifiedDate.getUTCMonth() + '/' + lastModifiedDate.getUTCFullYear();
             console.log(size);
 
             this.progressId = "progress_" + Math.floor((Math.random() * 100000));
 
 
 
-            var bar = '<div class="progress" id="' + this.progressId + '">' +
+            const bar = '<div class="progress" id="' + this.progressId + '">' +
                     '<div class="progress-date" id="progress-date-' + this.progressId + '">'+ uploadedDate + '</div>' +
                     '<div class="progress-title" id="progress-title-' + this.progressId + '"></div>' +
                     '<div class="progress-bar-wrapper"><div class="progress-bar" id="progress-bar-' + this.progressId + '"></div></div>' +
@@ -61,8 +61,8 @@ $(document).ready(function () {
 
 
 function uploadFileWithEncription(i, file, password) {
-    var reader = new FileReader();
-    var key = CryptoJS.PBKDF2(password, salt, {
+    let reader = new FileReader();
+    let key = CryptoJS.PBKDF2(password, salt, {
         keySize: keySize/32,
         iterations: iterations
     });
@@ -73,15 +73,15 @@ function uploadFileWithEncription(i, file, password) {
 
         console.log('passkey', key);
 
-        var encrypted = CryptoJS.AES.encrypt(e.target.result, key, { iv: iv, 
+        let encrypted = CryptoJS.AES.encrypt(e.target.result, key, { iv: iv, 
             mode: CryptoJS.mode.CBC, 
             padding: CryptoJS.pad.Pkcs7 
         });
       
-        var encryptedFile = new File([encrypted], file.name + '.encrypted', {type: file.type, lastModified: file.lastModified});
+        let encryptedFile = new File([encrypted], file.name + '.encrypted', {type: file.type, lastModified: file.lastModified});
         
         console.log('from timeout');
-        var formData = new FormData();
+        let formData = new FormData();
         formData.append("upload_file", encryptedFile);
         uploadFile(formData, i, file);
         
@@ -92,7 +92,7 @@ function uploadFileWithEncription(i, file, password) {
 }
 
 function uploadFile(formData, i, file) {
-    var ajax = $.ajax({
+    const ajax = $.ajax({
         url: '/uploadfile',
         type: 'POST',
         data: formData,
@@ -133,7 +133,7 @@ function uploadFile(formData, i, file) {
 }
 
 function calculateProgress(progress, i, file) {
-    var total = Math.round((progress.loaded / progress.total) * 100);
+    let total = Math.round((progress.loaded / progress.total) * 100);
     $("#progress-bar-" + i).css({"width": total + "%"});
     $("#progress-title-" + i).text(file.name);
 }
