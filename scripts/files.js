@@ -23,3 +23,34 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+function abc() {
+  console.log(1);
+  alert(1);
+}
+
+function ChangeElementColor(element){
+  console.log(element);
+  alert('you have click item ' +  element.id);
+  // var color = [
+  //   Math.random() * 255,
+  //   Math.random() * 255,
+  //   Math.random() * 255
+  // ];
+  // element.style.background = "rgb(" + color + ")"
+}
+
+// Initialize a special custom menu for the "CustomContextMenu" div
+var contextMenuTwo = CtxMenu(".CustomContextMenu");
+contextMenuTwo.addItem("About", ChangeElementColor, 'ico-mega.svg');
+contextMenuTwo.addItem("Mega website", ChangeElementColor, 'ico-download.svg');
+contextMenuTwo.addItem("Cloud drive", ChangeElementColor, 'ico-mega.svg');
+contextMenuTwo.addSeperator();
+contextMenuTwo.addItem("Add sync", ChangeElementColor, 'ico-download.svg');
+contextMenuTwo.addItem("Import links", ChangeElementColor, 'ico-mega.svg');
+contextMenuTwo.addItem("Upload", ChangeElementColor, 'ico-download.svg');
+contextMenuTwo.addItem("Download", ChangeElementColor, 'ico-mega.svg');
+contextMenuTwo.addItem("Stream", ChangeElementColor, 'ico-download.svg');
+contextMenuTwo.addItem("Preferences", ChangeElementColor, 'ico-mega.svg');
+contextMenuTwo.addSeperator();
+contextMenuTwo.addItem("Quit", ChangeElementColor, 'ico-download.svg');

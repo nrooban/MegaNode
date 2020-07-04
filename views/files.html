@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/libs/ctxmenu.js"></script>
     <link href="/files.css" rel="stylesheet" >
+    <link href="/libs/ctxmenu.css" rel="stylesheet" >
 </head>
 <body>
     
     <div class="uploader">
-       <button id="btnFile" class"btn">Show files</button>
+       <button id="btnFile" class="btn btn-default" class"btn">Show files</button>
     </div>
 
 
@@ -50,23 +52,40 @@
             </div>
             <div class="modal-body">
                 <div class="files-section">
-                    <div class="files-section__header">&nbsp;</div>
+                    <div class="files-section__header">
+                        <div class="content-header">
+                            <div class="dropdown">
+                                <button class="dropbtn">All Content</button>
+                                <div class="dropdown-content">
+                                <a onclick="abc()">Link 1</a>
+                                <a onclick="abc()">Link 2</a>
+                                <a onclick="abc()">Link 3</a>
+                                </div>
+                              </div>
+                           
+                        </div>
+                        <div class="owner-header">Owner</div>
+                        <div class="access-header">access</div>
+                    </div>
                     <div class="files-section__list-view">
                         <div class="scrollbox-content">
+                            <!-- <div id="CustomContextMenu" style="background:#6cc9d8;width:300px;height:50px;">
+                                <p>This div has a special context menu</p>
+                            </div> -->
                             <ul class="files-list">
                                 <li>
-                                    <a class="file-item" href="#">
+                                    <a class="file-item CustomContextMenu" id="file1" href="#">
                                           <div class="file-item__content">
                                               <img class="file-item__icon" src="./ico-pdf.svg" />
                                               <span class="file-item__name">Global-Peace Index My file Name.pdf</span>
                                               <span class="file-item__date">2020-12-16</span>
                                             </div>  
                                           <div class="file-item__owner">Honey Meada</div> 
-                                          <div class="file-item__access">Full access</div> 
+                                          <div class="file-item__access"></div> 
                                     </a>     
                                 </li>
                                 <li>
-                                    <a class="file-item" href="#">
+                                    <a class="file-item CustomContextMenu" id="file2" href="#">
                                           <div class="file-item__content">
                                               <img class="file-item__icon" src="./ico-folder.svg" />
                                               <span class="file-item__name">Global-Peace Index My file Name.pdf</span>
@@ -77,58 +96,58 @@
                                     </a>     
                                 </li>
                                 <li>
-                                    <a class="file-item" href="#">
+                                    <a class="file-item CustomContextMenu" id="file3" href="#">
                                           <div class="file-item__content">
                                               <img class="file-item__icon" src="./ico-pdf.svg" />
                                               <span class="file-item__name">Global-Peace Index My file Name.pdf</span>
                                               <span class="file-item__date">2020-12-16</span>
                                             </div>  
                                           <div class="file-item__owner">Honey Meada</div> 
-                                          <div class="file-item__access">Full access</div> 
+                                          <div class="file-item__access"></div> 
                                     </a>     
                                 </li>
                                 <li>
-                                    <a class="file-item" href="#">
+                                    <a class="file-item CustomContextMenu" id="file4" href="#">
                                           <div class="file-item__content">
                                               <img class="file-item__icon" src="./ico-pdf.svg" />
                                               <span class="file-item__name">Global-Peace Index My file Name.pdf</span>
                                               <span class="file-item__date">2020-12-16</span>
                                             </div>  
                                           <div class="file-item__owner">Honey Meada</div> 
-                                          <div class="file-item__access">Full access</div> 
+                                          <div class="file-item__access"></div> 
                                     </a>     
                                 </li>
                                 <li>
-                                    <a class="file-item" href="#">
+                                    <a class="file-item CustomContextMenu" id="file5" href="#">
                                           <div class="file-item__content">
                                               <img class="file-item__icon" src="./ico-folder.svg" />
                                               <span class="file-item__name">Global-Peace Index My file Name.pdf</span>
                                               <span class="file-item__date">2020-12-16</span>
                                             </div>  
                                           <div class="file-item__owner">Honey Meada</div> 
-                                          <div class="file-item__access">Full access</div> 
+                                          <div class="file-item__access"></div> 
                                     </a>     
                                 </li>
                                 <li>
-                                    <a class="file-item" href="#">
+                                    <a class="file-item CustomContextMenu" id="file6" href="#">
                                           <div class="file-item__content">
                                               <img class="file-item__icon" src="./ico-folder.svg" />
                                               <span class="file-item__name">Global-Peace Index My file Name.pdf</span>
                                               <span class="file-item__date">2020-12-16</span>
                                             </div>  
                                           <div class="file-item__owner">Honey Meada</div> 
-                                          <div class="file-item__access">Full access</div> 
+                                          <div class="file-item__access"></div> 
                                     </a>     
                                 </li>
                             </ul>
-                            
                         </div>
                         
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <h3>Modal Footer</h3>
+                <button class="btn btn-default mr15">Cancel</button>
+                <button class="btn btn-success">Copy to this folder</button>
             </div>
         </div>
     

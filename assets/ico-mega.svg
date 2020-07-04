@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon / about / Mono Copy</title>
+    <defs>
+        <filter x="-18.1%" y="-8.8%" width="137.2%" height="118.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Task---4" transform="translate(-1023.000000, -419.000000)">
+            <g id="Group-6" filter="url(#filter-1)" transform="translate(1013.000000, 412.000000)">
+                <g id="Group" transform="translate(16.000000, 12.000000)">
+                    <path d="M12,22 C6.48,22 2,17.52 2,12 C2,6.48 6.48,2 12,2 C17.52,2 22,6.48 22,12 C22,17.52 17.52,22 12,22 Z" id="Path" fill="#F0373A"></path>
+                    <path d="M16.8900757,15.3741522 C16.8900757,15.5391923 16.7617112,15.6675568 16.6027837,15.6675568 L15.3680396,15.6675568 C15.2091122,15.6675568 15.0807477,15.5391923 15.0807477,15.3741522 L15.0807477,11.5415554 C15.0807477,11.5048798 15.0379595,11.4926546 15.0196217,11.5109924 L12.4095438,14.1516333 C12.1833778,14.3839119 11.8166222,14.3839119 11.5904562,14.1516333 L8.98037827,11.5109924 C8.96204048,11.4926546 8.91925232,11.5048798 8.91925232,11.5415554 L8.91925232,15.3741522 C8.91925232,15.5391923 8.79088783,15.6675568 8.63196037,15.6675568 L7.39721626,15.6675568 C7.2382888,15.6675568 7.10992432,15.5391923 7.10992432,15.3741522 L7.10992432,8.62584778 C7.10992432,8.46080772 7.2382888,8.33244324 7.39721626,8.33244324 L8.24686691,8.33244324 C8.39968178,8.33244324 8.54638405,8.39356918 8.65641075,8.50359589 L11.8960859,11.7860592 C11.9510992,11.8410725 12.0489008,11.8410725 12.1039141,11.7860592 L15.3435892,8.50359589 C15.453616,8.39356918 15.6003182,8.33244324 15.7531331,8.33244324 L16.6027837,8.33244324 C16.7617112,8.33244324 16.8900757,8.46080772 16.8900757,8.62584778 L16.8900757,15.3741522" id="Fill-97" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
