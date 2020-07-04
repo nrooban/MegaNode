@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="/files.css" rel="stylesheet" >
+</head>
+<body>
+    
+    <div class="uploader">
+       <button id="btnFile" class"btn">Show files</button>
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>FILES</h2>
+            </div>
+            <div class="control-panel">
+                <div class="action-panel d-flex">
+                    <button class="btn mr5">
+                        NewFolder</button>
+                    <button class="btn">Upload</button>
+                    <div class="flex-grow-1"></div>
+                    <button class="ico-btn icon-list active"></button>
+                    <button class="ico-btn icon-grid"></button>
+                </div>
+                
+                <div class="files-searcher">
+                    <input type="text" value='' />
+                    <button class="btn-search"></button>
+                </div>
+                
+                <div class="file-path-wrapper">
+                    <ul class="file-path-breadcrumb">
+                        <li><a href="#">My Files</a></li>
+                        <li><a href="#">Icons</a></li>
+                        <li><a href="#">Downloads</a></li>
+                        <li>Italy</li>
+                      </ul>
+                </div>
+                
+            </div>
+            <div class="modal-body">
+                <p>Some text in the Modal Body</p>
+                <p>Some other text...</p>
+            </div>
+            <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div>
+        </div>
+    
+    </div>
+    <script src="/files.js"></script>
+
+</body>
+</html>

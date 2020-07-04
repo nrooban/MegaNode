@@ -19,6 +19,10 @@ router.get('/', (req, res, next) => {
     res.sendFile(path.join(__dirname, 'views', 'uploader.html'));
 });
 
+router.get('/files', (req, res, next) => {
+    res.sendFile(path.join(__dirname, 'views', 'files.html'));
+});
+
 router.post('/uploadfile', (req, res, next) => {
     upload(req,res,function(err) {
         if(err) {

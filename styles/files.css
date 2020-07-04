@@ -1,0 +1,257 @@
+@import url("style.css");
+body{
+    background: #CDCDCD;
+}
+
+.uploader {
+    display: flex;
+    width: auto;
+    height: auto;
+    max-width: auto;
+    max-height: auto;
+    background-color: #505050;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 1px 2px #383838;
+    padding:100px;
+}
+
+.btn {
+    border: 1px solid #ccc;
+    display: table-cell;
+    vertical-align:middle;
+    padding: 0px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #FCFCFC;
+    height: 34px;
+    vertical-align: middle;
+    font-size: 14px;
+    text-align: center;
+    outline:none;
+    color:#333333;
+    line-height:14px;
+}
+
+.ico-btn {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background-size: auto;
+    border:0;
+    background-color:transparent;
+    cursor: pointer;
+  }
+
+ [class^="ico-btn"].active {
+    background-color: #000;
+    /* filter: invert(0%) sepia(99%) saturate(7479%) hue-rotate(41deg) brightness(108%) contrast(87%); */
+    /* background-color: #ea2e2e; */
+  }
+  .icon-grid {
+      background-color: #bfbfbf;
+      -webkit-mask:  url(./ico-grid.svg) no-repeat 50% 50%;
+      mask: url(./ico-grid.svg) no-repeat 50% 50%;
+      /* background-position:center center;
+    background-repeat:no-repeat;
+    background-image: url(./ico-gridview.svg); */
+  }
+  .icon-list {
+    background-color: #bfbfbf;
+    -webkit-mask:  url(./ico-list.svg) no-repeat 50% 50%;
+    mask: url(./ico-list.svg) no-repeat 50% 50%;
+    /* background-position:center center;
+    background-repeat:no-repeat;
+    background-image: url(./ico-listview.svg); */
+  }
+
+  .icon-list:hover,
+  .icon-list:focus,
+  .icon-grid:hover,
+  .icon-grid:focus {
+    /* filter: invert(23%) sepia(8%) saturate(1045%) hue-rotate(176deg) brightness(96%) contrast(88%); */
+    background-color:#EFC4C5;
+    
+  }
+  
+  
+.modal {
+    /*display: none;  Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+  
+/* Modal Content */
+.modal-content {
+    display:flex;
+    flex-direction:column;
+    border-radius:24px;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 540px; 
+    height: 630px; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 32px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Modal Header */
+    .modal-header {
+        padding: 10px 18px 0px 32px;
+    }
+
+  .modal-header h2 {
+    font-weight:600;
+    color:#333333;
+  }
+  
+  /* Modal Body */
+  .modal-body {
+    padding: 2px 16px;
+    flex-grow:1;
+  }
+  
+  /* Modal Footer */
+  .modal-footer {
+    padding: 2px 16px;
+    
+  }
+  
+  /* Add Animation */
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 50%; opacity: 1}
+  }
+
+  .control-panel{
+      padding: 0 32px;
+  }
+
+  .ttonwrapper {
+    display: inline-block;
+  }
+  
+
+  .files-searcher {
+    position: relative;
+    margin: 10px 0;
+  }
+
+  .files-searcher input {
+    background-color: transparent;
+    border: 2px solid black;
+    box-sizing: border-box;
+    height: 34px;
+    width: 100%;
+    padding: 0 32px 0 10px;
+    border: 1px solid rgba(0,0,0,0.07);
+    border-radius: 16px;
+    background-color: rgba(0,0,0,0.01);
+  }
+
+  .files-searcher .btn-search {
+    position: absolute;
+    background-color: #ffffff;
+    right: 5px;
+    top: 4px;
+    border: none;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    border: 1px solid #E8E8E8;
+    cursor: pointer;
+    padding: 0px;
+    box-shadow: 0px 2px 2px #e2e2e2;
+  }
+
+  .files-searcher .btn-search::before{
+      content: "";
+      position: absolute;
+      height: 16px;
+      width: 16px;
+      left: 3px;
+      top: 3px;
+      background-color: #7D7D7D;
+      -webkit-mask:  url(./ico-search.svg) no-repeat 50% 50%;
+      mask: url(./ico-search..svg) no-repeat 50% 50%;
+  }
+
+  .files-searcher .btn-search:hover {
+      background-color:#EFC4C5;
+      border: 1px solid #EFC4C5;
+  }
+
+  .files-searcher .btn-search:hover::before {
+    background-color: #fff;
+  }
+
+
+  .file-path-wrapper {
+
+  }
+
+  ul.file-path-breadcrumb {
+    padding: 10px 0px;
+    list-style: none;
+    background-color: #fff;
+  }
+  
+  /* Display list items side by side */
+  ul.file-path-breadcrumb li {
+    display: inline-block;
+    font-size: 13px;
+    color: #999999;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.file-path-breadcrumb li+li:before {
+    position: relative;
+    padding: 0 12px;
+    color: #999999;
+    content: "\203A";
+    font-size: 26px;
+    line-height: 0;
+    /* margin-top: 14px; */
+    top: 3px;
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.file-path-breadcrumb li a {
+    color: #999999;
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.file-path-breadcrumb li a:hover {
+    text-decoration: underline;
+  }

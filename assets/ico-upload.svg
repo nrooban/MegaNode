@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ico-upload</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ico-upload">
+            <g id="Frame_-_24px">
+                <rect id="Rectangle" x="0" y="0.00325" width="26" height="26"></rect>
+            </g>
+            <g id="Line_Icons" transform="translate(2.000000, 2.000000)" fill-rule="nonzero">
+                <g id="Group">
+                    <path d="M11,0.0011 C4.9346,0.0011 0,4.9346 0,11.0011 C0,17.0665 4.9346,22.0011 11,22.0011 C17.0654,22.0011 22,17.0665 22,11.0011 C22,4.9357 17.0654,0.0011 11,0.0011 Z M11,19.8011 C6.1479,19.8011 2.2,15.8521 2.2,11.0011 C2.2,6.1479 6.1479,2.2011 11,2.2011 C15.8521,2.2011 19.8,6.1479 19.8,11.0011 C19.8,15.8532 15.8521,19.8011 11,19.8011 Z" id="Shape" fill="#3C434D"></path>
+                    <polygon id="Path" fill="#00BFA5" points="5.8223 9.1234 7.3777 10.6788 9.9 8.1576 9.9 17.6011 12.1 17.6011 12.1 8.1576 14.6223 10.6788 16.1777 9.1234 11 3.9457"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
