@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ico-folder</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ico-folder">
+            <path d="M6,16 L42,16 L42,39 C42,39.5522847 41.5522847,40 41,40 L7,40 C6.44771525,40 6,39.5522847 6,39 L6,16 L6,16 Z" id="Rectangle" fill="#F8E9B1" fill-rule="nonzero"></path>
+            <path d="M7,8 L21.1715729,8 C21.7020059,8 22.2107137,8.21071368 22.5857864,8.58578644 L25.4142136,11.4142136 C25.7892863,11.7892863 26.2979941,12 26.8284271,12 L41,12 C41.5522847,12 42,12.4477153 42,13 L42,16 L42,16 L6,16 L6,9 C6,8.44771525 6.44771525,8 7,8 Z" id="Rectangle" fill="#F5DF8E" fill-rule="nonzero"></path>
+            <path d="M21.1715729,8.5 C21.5693976,8.5 21.9509285,8.65803526 22.232233,8.93933983 L22.232233,8.93933983 L25.0606602,11.767767 C25.5295011,12.2366079 26.1653859,12.5 26.8284271,12.5 L26.8284271,12.5 L41,12.5 L41.5,39 L7,39.5 L6.5,9 L21.1715729,8.5 Z" id="Rectangle" stroke="#EBC01E"></path>
+            <rect id="Rectangle-2" fill="#EBC01E" fill-rule="nonzero" x="8" y="16" width="32" height="2"></rect>
+            <rect id="24px-safe" x="0" y="0" width="48" height="48"></rect>
+        </g>
+    </g>
+</svg>

@@ -100,8 +100,8 @@ body{
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 540px; 
-    height: 630px; 
+    max-width: 540px;
+    max-height: 630px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     position: absolute;
     left: 50%;
@@ -109,6 +109,8 @@ body{
     transform: translate(-50%, -50%);
     animation-name: animatetop;
     animation-duration: 0.4s;
+    width: 100%;
+    height: 100%;
   }
   
   /* The Close Button */
@@ -127,7 +129,7 @@ body{
 
   /* Modal Header */
     .modal-header {
-        padding: 10px 18px 0px 32px;
+        padding: 10px 19px 15px 34px;
     }
 
   .modal-header h2 {
@@ -221,7 +223,7 @@ body{
   }
 
   ul.file-path-breadcrumb {
-    padding: 10px 0px;
+    padding: 8px 0 4px 0;
     list-style: none;
     background-color: #fff;
   }
@@ -253,5 +255,101 @@ body{
   
   /* Add a color on mouse-over */
   ul.file-path-breadcrumb li a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
+
+  .files-section {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+  }
+
+  .files-section__header {
+    /* background-color: red;   */
+  }
+
+.files-section__list-view {
+    height: 290px;
+    overflow: auto;
+    visibility: hidden;
+}
+
+.scrollbox-content {
+    visibility: visible;  
+}
+
+.files-section__list-view:hover,
+.files-section__list-view:focus {
+  visibility: visible;
+  box-shadow: inset 0px 11px 8px -10px #f0f0f0, inset 0px -11px 8px -10px #f0f0f0;
+}
+
+.scrollbox_delayed {
+  transition: visibility 0.2s;
+}
+.scrollbox_delayed:hover {
+  transition: visibility 0s 0.2s;
+}
+
+ul.files-list {margin: 0;padding: 0;list-style: none;}
+
+ul.files-list li {
+    border-bottom: 1px solid #F2F2F2;
+}
+
+ul.files-list li a {
+    padding: 10px;
+    text-decoration: none;
+    height: 56px;
+    color: #333333;
+    /* background-color: #f5f5f5; */
+}
+
+.file-item {
+    display: flex;
+    position: relative;
+}
+
+.file-item__content {
+    width: 60%;
+    min-width: 224px;
+    padding-right: 20px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.file-item__icon {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+}
+
+.file-item__name {
+    margin-left: 56px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.file-item__date {
+    color: #999999;
+    margin-left: 56px;
+    font-size: 13px;
+}
+
+.file-item__owner {
+    width: 22%;
+    min-width: 126px;
+    white-space: nowrap;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.file-item__access {
+    flex-grow: 1;
+    min-width: 88px;
+    
+}
