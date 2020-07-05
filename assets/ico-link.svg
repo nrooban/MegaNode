@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="35px" viewBox="0 0 36 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon / Link / Mono</title>
+    <defs>
+        <filter x="-18.1%" y="-8.8%" width="137.2%" height="118.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="97.4589445%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#EFEFEF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#A6A6A6" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#888888" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Task---4" transform="translate(-1023.000000, -564.000000)">
+            <g id="Group-6" filter="url(#filter-1)" transform="translate(1013.000000, 412.000000)">
+                <g id="Group" transform="translate(16.000000, 157.000000)">
+                    <rect id="Rectangle" stroke="url(#linearGradient-3)" fill="url(#linearGradient-2)" x="2.5" y="2.5" width="19" height="18" rx="9"></rect>
+                    <path d="M11,8.00001017 L11,8.99901017 L9.5,9 C8.1745166,9 7.08996133,10.0315359 7.00531768,11.3356243 L7,11.5 C7,12.8807119 8.11928813,14 9.5,14 L9.5,14 L11,13.9990102 L11,15.0000102 L9.5,15.0000102 C7.56700337,15.0000102 6,13.4330068 6,11.5000102 C6,9.56701355 7.56700337,8.00001017 9.5,8.00001017 L11,8.00001017 Z M14.5,8.00001017 C16.4329966,8.00001017 18,9.56701355 18,11.5000102 C18,13.4330068 16.4329966,15.0000102 14.5,15.0000102 L13,15.0000102 L13,13.9990102 L14.5,14 C15.8254834,14 16.9100387,12.9684641 16.9946823,11.6643757 L17,11.5 C17,10.1192881 15.8807119,9 14.5,9 L14.5,9 L13,8.99901017 L13,8.00001017 L14.5,8.00001017 Z M14,11 L14,12 L10,12 L10,11 L14,11 Z" id="Combined-Shape" fill="#2BA6DE" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -24,33 +24,27 @@ window.onclick = function(event) {
   }
 }
 
-function abc() {
-  console.log(1);
-  alert(1);
+function abc(){
+  
+  alert('abcdef');
 }
 
-function ChangeElementColor(element){
+function ContextMenuDummyFunction(element){
   console.log(element);
   alert('you have click item ' +  element.id);
-  // var color = [
-  //   Math.random() * 255,
-  //   Math.random() * 255,
-  //   Math.random() * 255
-  // ];
-  // element.style.background = "rgb(" + color + ")"
 }
 
 // Initialize a special custom menu for the "CustomContextMenu" div
 var contextMenuTwo = CtxMenu(".CustomContextMenu");
-contextMenuTwo.addItem("About", ChangeElementColor, 'ico-mega.svg');
-contextMenuTwo.addItem("Mega website", ChangeElementColor, 'ico-download.svg');
-contextMenuTwo.addItem("Cloud drive", ChangeElementColor, 'ico-mega.svg');
+contextMenuTwo.addItem("About", ContextMenuDummyFunction, 'ico-mega.svg');
+contextMenuTwo.addItem("Mega website", ContextMenuDummyFunction, 'ico-website.svg');
+contextMenuTwo.addItem("Cloud drive", ContextMenuDummyFunction, 'ico-cloud.svg');
 contextMenuTwo.addSeperator();
-contextMenuTwo.addItem("Add sync", ChangeElementColor, 'ico-download.svg');
-contextMenuTwo.addItem("Import links", ChangeElementColor, 'ico-mega.svg');
-contextMenuTwo.addItem("Upload", ChangeElementColor, 'ico-download.svg');
-contextMenuTwo.addItem("Download", ChangeElementColor, 'ico-mega.svg');
-contextMenuTwo.addItem("Stream", ChangeElementColor, 'ico-download.svg');
-contextMenuTwo.addItem("Preferences", ChangeElementColor, 'ico-mega.svg');
+contextMenuTwo.addItem("Add sync", ContextMenuDummyFunction, 'ico-sync.svg');
+contextMenuTwo.addItem("Import links", ContextMenuDummyFunction, 'ico-link.svg');
+contextMenuTwo.addItem("Upload", ContextMenuDummyFunction, 'ico-upload2.svg');
+contextMenuTwo.addItem("Download", ContextMenuDummyFunction, 'ico-download.svg');
+contextMenuTwo.addItem("Stream", ContextMenuDummyFunction, 'ico-stream.svg');
+contextMenuTwo.addItem("Preferences", ContextMenuDummyFunction, 'ico-preference.svg');
 contextMenuTwo.addSeperator();
-contextMenuTwo.addItem("Quit", ChangeElementColor, 'ico-download.svg');
+contextMenuTwo.addItem("Quit", ContextMenuDummyFunction, 'ico-quit.svg');

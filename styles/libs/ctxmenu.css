@@ -1,13 +1,5 @@
-/* @font-face {
-  font-family: 'CtxMenuFont';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Segoe UI');
-} */
-
 /* Background that covers entire page when right clicking, invisible by default */
 #ctx-menu-background {
-  /* background-color: rgba(0, 0, 0, 0.1);  Tint entire page darker when context menu appears */
   position: absolute;
   top: 0;
   left: 0;
@@ -60,8 +52,8 @@
 }
 
 .ctx-menu-item:active {
-  transition: background-color 0s;
-  background-color: rgba(0,0,0,0.2);
+  /* transition: background-color 0s;
+  background-color: rgba(0,0,0,0.2); */
 }
 
 /* Icons */

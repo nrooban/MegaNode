@@ -27,9 +27,15 @@
             </div>
             <div class="control-panel">
                 <div class="action-panel d-flex">
-                    <button class="btn mr5">
-                        NewFolder</button>
-                    <button class="btn">Upload</button>
+                    <button class="btn btn-medium mr5">
+                        <img src="/ico-newfolder.svg"/>
+                        <span>New Folder</span>
+                    </button>
+                    <button class="btn btn-medium mr5">
+                        <img src="/ico-upload.svg"/>
+                        <span>Upload</span>
+                    </button>
+                    
                     <div class="flex-grow-1"></div>
                     <button class="ico-btn icon-list active"></button>
                     <button class="ico-btn icon-grid"></button>
@@ -57,15 +63,28 @@
                             <div class="dropdown">
                                 <button class="dropbtn">All Content</button>
                                 <div class="dropdown-content">
-                                <a onclick="abc()">Link 1</a>
-                                <a onclick="abc()">Link 2</a>
-                                <a onclick="abc()">Link 3</a>
+                                    <a class="black bold" onclick="abc()">All Content <span class="badge">2</span></a>
+                                    <hr>
+                                    <a class="bullet-green" onclick="abc()">Contacts</a>
+                                    <a class="bullet-yellow" onclick="abc()">Incoming Shares <span class="badge">5</span></a>
+                                    <a class="bullet-orange" onclick="abc()">Payment <span class="badge">1</span></a>
+                                    <a class="bullet-red" onclick="abc()">Takedown</a>
                                 </div>
-                              </div>
+                            </div>
                            
                         </div>
-                        <div class="owner-header">Owner</div>
-                        <div class="access-header">access</div>
+                        <div class="owner-header">
+                            <div class="dropdown">
+                                <button class="dropbtn">Owner <span class="badge">12</span></button>
+                                <!-- <div class="dropdown-content">
+                                    <a onclick="abc()">Rooban</a>
+                                    <a onclick="abc()">Robert<span class="badge">5</span></a>
+                                    <a onclick="abc()">John Doe <span class="badge">1</span></a>
+                                    <a onclick="abc()">Smith Arg</a>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="access-header">Access</div>
                     </div>
                     <div class="files-section__list-view">
                         <div class="scrollbox-content">
@@ -88,7 +107,7 @@
                                     <a class="file-item CustomContextMenu" id="file2" href="#">
                                           <div class="file-item__content">
                                               <img class="file-item__icon" src="./ico-folder.svg" />
-                                              <span class="file-item__name">Global-Peace Index My file Name.pdf</span>
+                                              <span class="file-item__name">Invoice Collections</span>
                                               <span class="file-item__date">2020-12-16</span>
                                             </div>  
                                           <div class="file-item__owner">Pathmarooban Nadarajah</div> 
@@ -99,7 +118,7 @@
                                     <a class="file-item CustomContextMenu" id="file3" href="#">
                                           <div class="file-item__content">
                                               <img class="file-item__icon" src="./ico-pdf.svg" />
-                                              <span class="file-item__name">Global-Peace Index My file Name.pdf</span>
+                                              <span class="file-item__name">Sotirea-sianlaisen.pdf</span>
                                               <span class="file-item__date">2020-12-16</span>
                                             </div>  
                                           <div class="file-item__owner">Honey Meada</div> 
@@ -110,7 +129,7 @@
                                     <a class="file-item CustomContextMenu" id="file4" href="#">
                                           <div class="file-item__content">
                                               <img class="file-item__icon" src="./ico-pdf.svg" />
-                                              <span class="file-item__name">Global-Peace Index My file Name.pdf</span>
+                                              <span class="file-item__name">Lorem-ipsumdolor-sitamet-consectetur-adipiscing.pdf</span>
                                               <span class="file-item__date">2020-12-16</span>
                                             </div>  
                                           <div class="file-item__owner">Honey Meada</div> 
@@ -121,7 +140,7 @@
                                     <a class="file-item CustomContextMenu" id="file5" href="#">
                                           <div class="file-item__content">
                                               <img class="file-item__icon" src="./ico-folder.svg" />
-                                              <span class="file-item__name">Global-Peace Index My file Name.pdf</span>
+                                              <span class="file-item__name">Excepteur sint</span>
                                               <span class="file-item__date">2020-12-16</span>
                                             </div>  
                                           <div class="file-item__owner">Honey Meada</div> 
@@ -132,7 +151,7 @@
                                     <a class="file-item CustomContextMenu" id="file6" href="#">
                                           <div class="file-item__content">
                                               <img class="file-item__icon" src="./ico-folder.svg" />
-                                              <span class="file-item__name">Global-Peace Index My file Name.pdf</span>
+                                              <span class="file-item__name">quis nostrud exercitation</span>
                                               <span class="file-item__date">2020-12-16</span>
                                             </div>  
                                           <div class="file-item__owner">Honey Meada</div> 

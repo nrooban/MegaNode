@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon / Upload / Mono</title>
+    <defs>
+        <filter x="-18.1%" y="-8.8%" width="137.2%" height="118.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Task---4" transform="translate(-1023.000000, -596.000000)">
+            <g id="Group-6" filter="url(#filter-1)" transform="translate(1013.000000, 412.000000)">
+                <g id="Group" transform="translate(16.000000, 189.000000)">
+                    <path d="M2,12 C2,17.525 6.475,22 12,22 C17.525,22 22,17.525 22,12 C22,6.475 17.525,2 12,2 C6.475,2 2,6.475 2,12 L2,12 Z" id="Fill-57-Copy" fill="#8DD0EF"></path>
+                    <path d="M12,2.5 C14.624375,2.5 16.999405,3.56276181 18.7183216,5.28167839 C20.4372382,7.00059497 21.5,9.375625 21.5,12 C21.5,14.624375 20.4372382,16.999405 18.7183216,18.7183216 C16.999405,20.4372382 14.624375,21.5 12,21.5 C9.375625,21.5 7.00059497,20.4372382 5.28167839,18.7183216 C3.56276181,16.999405 2.5,14.624375 2.5,12 C2.5,9.375625 3.56276181,7.00059497 5.28167839,5.28167839 C7.00059497,3.56276181 9.375625,2.5 12,2.5 L12,2.5 Z" id="Fill-57-Copy" stroke-opacity="0.3" stroke="#2BA6DE"></path>
+                    <polyline id="Imported-Layers" fill="#FFFFFF" points="17 12 12 7 7 12 8 13 11 10 11 17 13 17 13 10 16 13 17 12"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

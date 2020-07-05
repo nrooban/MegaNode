@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="42px" viewBox="0 0 50 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 9</title>
+    <defs>
+        <filter x="-18.1%" y="-8.8%" width="137.2%" height="118.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="83.6364413%" y1="72.2222222%" x2="44.3135246%" y2="27.7777778%" id="linearGradient-2">
+            <stop stop-color="#F0F0F0" offset="0%"></stop>
+            <stop stop-color="#F3F3F3" offset="100%"></stop>
+        </linearGradient>
+        <path d="M16.8964437,13.8040729 C12.4690995,13.8040729 9.26098832,13.8040729 5.38985195,13.8040729 C1.15014648,13.8040729 0.0543212891,6.43493652 6.33081055,6.03369141 C7.7331543,-0.625732422 17.3499756,-8.94839758e-14 17.3499756,8 C21.2133789,8.08451121 21.2133789,13.8040729 16.8964437,13.8040729 Z" id="path-3"></path>
+        <filter x="-10.9%" y="-8.1%" width="121.9%" height="132.4%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Task---4" transform="translate(-1017.000000, -479.000000)">
+            <g id="Group-6" filter="url(#filter-1)" transform="translate(1013.000000, 412.000000)">
+                <g id="Group-9" transform="translate(17.000000, 80.000000)">
+                    <path d="M8.15354541,1.59200361 C9.46283494,0.782970138 11.0835741,0.366281248 12.6623141,0.538166138 C13.9584146,0.679278728 15.225611,1.22027515 16.2620434,2.27103737 C17.1909745,3.21281208 17.9312395,4.55770016 18.3599243,6.37097453 C20.1834158,6.75593826 21.2549873,7.17575797 22.0307825,7.84585348 C22.8961222,8.59329329 23.3898846,9.64558287 23.4835985,10.7343989 C23.5761479,11.8096861 23.2784309,12.9225717 22.5554331,13.8158445 C21.9154708,14.6065259 20.944944,15.2199202 19.633332,15.5 L19.633332,15.5 L5.10189438,15.5 C3.68027244,15.3943082 2.57545558,14.830887 1.80696823,14.007227 C0.938003398,13.0758758 0.5,11.8205141 0.5,10.5513374 C0.5,9.30133371 0.925129667,8.03455985 1.79574576,7.04232778 C2.56857383,6.16154369 3.69139925,5.50174563 5.16760276,5.25042188 C5.9091678,3.52360518 6.88910163,2.3733261 8.15354541,1.59200361 Z" id="Path-4-Copy-4" stroke-opacity="0.2" stroke="#000000" fill="url(#linearGradient-2)"></path>
+                    <g id="Path-19">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
