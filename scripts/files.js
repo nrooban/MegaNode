@@ -24,9 +24,8 @@ window.onclick = function(event) {
   }
 }
 
-function abc(){
-  
-  alert('abcdef');
+function onDropdownClick(){
+  alert('Dropdown Clicked');
 }
 
 function ContextMenuDummyFunction(element){
@@ -34,7 +33,7 @@ function ContextMenuDummyFunction(element){
   alert('you have click item ' +  element.id);
 }
 
-// Initialize a special custom menu for the "CustomContextMenu" div
+
 var contextMenuTwo = CtxMenu(".CustomContextMenu");
 contextMenuTwo.addItem("About", ContextMenuDummyFunction, 'ico-mega.svg');
 contextMenuTwo.addItem("Mega website", ContextMenuDummyFunction, 'ico-website.svg');
@@ -48,3 +47,14 @@ contextMenuTwo.addItem("Stream", ContextMenuDummyFunction, 'ico-stream.svg');
 contextMenuTwo.addItem("Preferences", ContextMenuDummyFunction, 'ico-preference.svg');
 contextMenuTwo.addSeperator();
 contextMenuTwo.addItem("Quit", ContextMenuDummyFunction, 'ico-quit.svg');
+
+
+var NUM_CHARS = 4;
+var ellipsisDivs = document.querySelectorAll(".ellipsis");
+for (var i = 0; i < ellipsisDivs.length; ++i){
+    var e = ellipsisDivs[i];
+    if (e.offsetWidth < e.scrollWidth){
+        var text = e.textContent;
+        e.dataset.tail = text.slice(text.length - NUM_CHARS);
+    }
+}

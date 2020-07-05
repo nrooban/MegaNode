@@ -44,183 +44,25 @@ hr {border : 1px solid #E5E5E5;}
 .black {color: #000 !important;}
 .bold {font-weight: 600 !important;}
 
+.ellipsis:before {
+  float: right;
+  content: attr(data-tail);
+}
+
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .d-flex {
     display: flex !important;
 }
 
-.d-inline-flex {
-    display: inline-flex !important;
+.flex-grow-1 {
+  -ms-flex-positive: 1 !important;
+  flex-grow: 1 !important;
 }
-
-.flex-row {
-    -ms-flex-direction: row !important;
-    flex-direction: row !important;
-  }
-  
-  .flex-column {
-    -ms-flex-direction: column !important;
-    flex-direction: column !important;
-  }
-  
-  .flex-row-reverse {
-    -ms-flex-direction: row-reverse !important;
-    flex-direction: row-reverse !important;
-  }
-  
-  .flex-column-reverse {
-    -ms-flex-direction: column-reverse !important;
-    flex-direction: column-reverse !important;
-  }
-  
-  .flex-wrap {
-    -ms-flex-wrap: wrap !important;
-    flex-wrap: wrap !important;
-  }
-  
-  .flex-nowrap {
-    -ms-flex-wrap: nowrap !important;
-    flex-wrap: nowrap !important;
-  }
-  
-  .flex-wrap-reverse {
-    -ms-flex-wrap: wrap-reverse !important;
-    flex-wrap: wrap-reverse !important;
-  }
-  
-  .flex-fill {
-    -ms-flex: 1 1 auto !important;
-    flex: 1 1 auto !important;
-  }
-  
-  .flex-grow-0 {
-    -ms-flex-positive: 0 !important;
-    flex-grow: 0 !important;
-  }
-  
-  .flex-grow-1 {
-    -ms-flex-positive: 1 !important;
-    flex-grow: 1 !important;
-  }
-  
-  .flex-shrink-0 {
-    -ms-flex-negative: 0 !important;
-    flex-shrink: 0 !important;
-  }
-  
-  .flex-shrink-1 {
-    -ms-flex-negative: 1 !important;
-    flex-shrink: 1 !important;
-  }
-  
-  .justify-content-start {
-    -ms-flex-pack: start !important;
-    justify-content: flex-start !important;
-  }
-  
-  .justify-content-end {
-    -ms-flex-pack: end !important;
-    justify-content: flex-end !important;
-  }
-  
-  .justify-content-center {
-    -ms-flex-pack: center !important;
-    justify-content: center !important;
-  }
-  
-  .justify-content-between {
-    -ms-flex-pack: justify !important;
-    justify-content: space-between !important;
-  }
-  
-  .justify-content-around {
-    -ms-flex-pack: distribute !important;
-    justify-content: space-around !important;
-  }
-  
-  .align-items-start {
-    -ms-flex-align: start !important;
-    align-items: flex-start !important;
-  }
-  
-  .align-items-end {
-    -ms-flex-align: end !important;
-    align-items: flex-end !important;
-  }
-  
-  .align-items-center {
-    -ms-flex-align: center !important;
-    align-items: center !important;
-  }
-  
-  .align-items-baseline {
-    -ms-flex-align: baseline !important;
-    align-items: baseline !important;
-  }
-  
-  .align-items-stretch {
-    -ms-flex-align: stretch !important;
-    align-items: stretch !important;
-  }
-  
-  .align-content-start {
-    -ms-flex-line-pack: start !important;
-    align-content: flex-start !important;
-  }
-  
-  .align-content-end {
-    -ms-flex-line-pack: end !important;
-    align-content: flex-end !important;
-  }
-  
-  .align-content-center {
-    -ms-flex-line-pack: center !important;
-    align-content: center !important;
-  }
-  
-  .align-content-between {
-    -ms-flex-line-pack: justify !important;
-    align-content: space-between !important;
-  }
-  
-  .align-content-around {
-    -ms-flex-line-pack: distribute !important;
-    align-content: space-around !important;
-  }
-  
-  .align-content-stretch {
-    -ms-flex-line-pack: stretch !important;
-    align-content: stretch !important;
-  }
-  
-  .align-self-auto {
-    -ms-flex-item-align: auto !important;
-    align-self: auto !important;
-  }
-  
-  .align-self-start {
-    -ms-flex-item-align: start !important;
-    align-self: flex-start !important;
-  }
-  
-  .align-self-end {
-    -ms-flex-item-align: end !important;
-    align-self: flex-end !important;
-  }
-  
-  .align-self-center {
-    -ms-flex-item-align: center !important;
-    align-self: center !important;
-  }
-  
-  .align-self-baseline {
-    -ms-flex-item-align: baseline !important;
-    align-self: baseline !important;
-  }
-  
-  .align-self-stretch {
-    -ms-flex-item-align: stretch !important;
-    align-self: stretch !important;
-  }
 
 .btn {
     border: 1px solid #ccc;
@@ -234,6 +76,7 @@ hr {border : 1px solid #E5E5E5;}
     outline:none;
     color: #333333;
     line-height: 34px;
+    outline:none;
 }
 
 .btn:hover {
@@ -314,90 +157,14 @@ hr {border : 1px solid #E5E5E5;}
     box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
 }
 
-/* .drop-down-menu {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.drop-down {
-  position: relative;
-  display:inline-block;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.drop-down > a::after {
-  position: relative;
-  padding: 0 8px;
-  color: #999999;
-  content: "\203A";
-  font-size: 26px;
-  line-height: 0;
-  top: 3px;
-}
-
-.drop-down > a {
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.drop-down div {
-  margin-top: 10px;
-  position: absolute;
-  left: -20px;
-  height: 300px;
-  width: 100%;
-  min-width: 200px;
-  display: none;
-  z-index: 9999;
-  border-radius: 4px;
-  background-color: #FFFFFF;
-  box-shadow: 0 1px 6px 0 rgba(0,0,0,0.2);
-
-}
-
-.drop-down > a:focus~div {
-  display: block;
-}
-
-.drop-down-items {
-
-} */
-
-
-/* .dropdown {
-  position: relative;
-  display: inline-block;
-  cursor:pointer;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top:20px;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  border-radius: 4px;
-  background-color: #FFFFFF;
-  box-shadow: 0 1px 6px 0 rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-} */
 
 .dropbtn {
-  /* background-color: #4CAF50; */
   color: #999999;
   font-size: 14px;
   border: none;
   cursor: pointer;
   background-color: transparent;
+  outline: none;
 }
 
 .dropbtn > .badge {
@@ -406,7 +173,6 @@ hr {border : 1px solid #E5E5E5;}
   font-size: 11px;
   display: inline-block;
   padding: 4px 6px;
-  /* font-size: 75%; */
   font-weight: lighter;
   line-height: 1;
   text-align: center;
@@ -446,8 +212,6 @@ hr {border : 1px solid #E5E5E5;}
 }
 
 .dropdown-content hr {
-  /* height: .5px; */
-  /* margin: 3px 0 3px 0; */
   border: .5px solid #f1f1f1;
 }
 
